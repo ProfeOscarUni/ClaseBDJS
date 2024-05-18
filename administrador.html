@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de usuarios</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="contenedorAdministador">
+        <h1>Administador de usuarios</h1>
+        <form id="administadorForm">
+            <label for="cedula">Cédula</label>
+            <input type="text" id="cedula" name="cedula" required>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+            <label for="role">Rol</label>
+            <input type="text" id="role" name="role" required> 
+            <button type ="submit">Agregar Usuario</button>         
+            
+        </form>
+        <h2>Lista de Usuarios</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Cédula</th>
+                    <th>Nombre</th>
+                    <th>Rol</th>
+                </tr>                      
+            </thead>
+            <tbody id="userList">               
+            </tbody>
+        </table>
+    </div>
+    <script src="administrador.js"></script>
+    
+</body>
+</html>
